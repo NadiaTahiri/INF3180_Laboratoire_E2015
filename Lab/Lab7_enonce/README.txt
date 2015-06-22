@@ -1,5 +1,6 @@
 
-
+								LABORATOIRE 7
+								
 1) Vous devez créer des séquences (create sequence), pour chacune des tables.
 
 
