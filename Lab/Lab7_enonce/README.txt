@@ -1,3 +1,5 @@
+
+
 1) Vous devez créer des séquences (create sequence), pour chacune des tables.
 
 
@@ -11,3 +13,4 @@ Pour connaître toutes informations relatives pour chaque séquence (desc user_s
 
 
 4) Enfin, vous allez supprimer  la dernière séquence  (drop sequence).
+
