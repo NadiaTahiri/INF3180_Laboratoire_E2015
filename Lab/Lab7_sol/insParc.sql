@@ -1,4 +1,10 @@
 --
+DELETE FROM Types;
+DELETE FROM Installer;
+DELETE FROM Poste;
+DELETE FROM Salle;
+DELETE FROM Segment;
+DELETE FROM Logiciel;
 
 INSERT INTO Segment VALUES (sequenceSeg.NEXTVAL,'130.120.80','Brin RDC',NULL);
 INSERT INTO Segment VALUES (sequenceSeg.NEXTVAL,'130.120.81','Brin 1er  étage',NULL);
@@ -42,17 +48,17 @@ INSERT INTO Types VALUES (sequenceTyp.NEXTVAL,'PCNT','PC Windows  NT');
 INSERT INTO Types VALUES (sequenceTyp.NEXTVAL,'PCWS','PC Windows');
 INSERT INTO Types VALUES (sequenceTyp.NEXTVAL,'NC',  'Network Computer');
 
-INSERT INTO installer VALUES ('p2', 'log1', sequenceIns.NEXTVAL,'15-05-2003',NULL);
-INSERT INTO installer VALUES ('p2', 'log2', sequenceIns.NEXTVAL,'17-09-2003',NULL);
+INSERT INTO installer VALUES ('p2', 'log1', sequenceIns.NEXTVAL,to_date('15/05/2003','dd/mm/yyyy'),NULL);
+INSERT INTO installer VALUES ('p2', 'log2', sequenceIns.NEXTVAL,to_date('17/09/2003','dd/mm/yyyy'),NULL);
 INSERT INTO installer VALUES ('p4', 'log5', sequenceIns.NEXTVAL, NULL,NULL);
-INSERT INTO installer VALUES ('p6', 'log6', sequenceIns.NEXTVAL,'20-05-2003',NULL);
-INSERT INTO installer VALUES ('p6', 'log1', sequenceIns.NEXTVAL,'20-05-2003',NULL);
-INSERT INTO installer VALUES ('p8', 'log2', sequenceIns.NEXTVAL,'19-05-2003',NULL);
-INSERT INTO installer VALUES ('p8', 'log6', sequenceIns.NEXTVAL,'20-05-2003',NULL);
-INSERT INTO installer VALUES ('p11','log3', sequenceIns.NEXTVAL,'20-04-2003',NULL);
-INSERT INTO installer VALUES ('p12','log4', sequenceIns.NEXTVAL,'20-04-2003',NULL);
-INSERT INTO installer VALUES ('p11','log7', sequenceIns.NEXTVAL,'20-04-2003',NULL);
-INSERT INTO installer VALUES ('p7', 'log7', sequenceIns.NEXTVAL,'01-04-2002',NULL);
+INSERT INTO installer VALUES ('p6', 'log6', sequenceIns.NEXTVAL,to_date('20/05/2003','dd/mm/yyyy'),NULL);
+INSERT INTO installer VALUES ('p6', 'log1', sequenceIns.NEXTVAL,to_date('20/05/2003','dd/mm/yyyy'),NULL);
+INSERT INTO installer VALUES ('p8', 'log2', sequenceIns.NEXTVAL,to_date('19/05/2003','dd/mm/yyyy'),NULL);
+INSERT INTO installer VALUES ('p8', 'log6', sequenceIns.NEXTVAL,to_date('20/05/2003','dd/mm/yyyy'),NULL);
+INSERT INTO installer VALUES ('p11','log3', sequenceIns.NEXTVAL,to_date('20/04/2003','dd/mm/yyyy'),NULL);
+INSERT INTO installer VALUES ('p12','log4', sequenceIns.NEXTVAL,to_date('20/04/2003','dd/mm/yyyy'),NULL);
+INSERT INTO installer VALUES ('p11','log7', sequenceIns.NEXTVAL,to_date('20/04/2003','dd/mm/yyyy'),NULL);
+INSERT INTO installer VALUES ('p7', 'log7', sequenceIns.NEXTVAL,to_date('01/04/2002','dd/mm/yyyy'),NULL);
 
 COMMIT;
 
