@@ -9,9 +9,21 @@ pour ajouter le numéro de séquence de façon adéquate(sequence.nextVal).
 
 
 3) Puis, vous allez lister toutes les séquences 
-(SELECT * FROM information_schema.sequences ou  SELECT * FROM user_sequences).
-Pour connaître toutes informations relatives pour chaque séquence (desc user_sequences).select
+(
+//POUR MYSQL
+SELECT * 
+FROM information_schema.sequences 
+
+ou  
+//POUR ORACLE
+select * from user_sequences;
+
+).
+Pour connaître toutes informations relatives pour chaque séquence desc user_sequences.
 
 
 4) Enfin, vous allez supprimer  la dernière séquence  (drop sequence).
+
+NB: .CURVAL
+MINVALUE
 

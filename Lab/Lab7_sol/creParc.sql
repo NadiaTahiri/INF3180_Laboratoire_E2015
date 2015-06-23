@@ -1,4 +1,9 @@
--- Creation des tables et PK
+DROP TABLE Segment;
+DROP TABLE Salle;
+DROP TABLE Poste;
+DROP TABLE Logiciel;
+DROP TABLE Installer;
+DROP TABLE Types;
 
 CREATE TABLE Segment
 	( seqSeg    NUMBER(5),

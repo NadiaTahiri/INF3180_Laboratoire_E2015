@@ -1,4 +1,3 @@
---
 DELETE FROM Types;
 DELETE FROM Installer;
 DELETE FROM Poste;
@@ -7,8 +6,8 @@ DELETE FROM Segment;
 DELETE FROM Logiciel;
 
 INSERT INTO Segment VALUES (sequenceSeg.NEXTVAL,'130.120.80','Brin RDC',NULL);
-INSERT INTO Segment VALUES (sequenceSeg.NEXTVAL,'130.120.81','Brin 1er  étage',NULL);
-INSERT INTO Segment VALUES (sequenceSeg.NEXTVAL,'130.120.82','Brin 2ème étage',NULL);
+INSERT INTO Segment VALUES (sequenceSeg.NEXTVAL,'130.120.81','Brin 1er  etage',NULL);
+INSERT INTO Segment VALUES (sequenceSeg.NEXTVAL,'130.120.82','Brin 2eme etage',NULL);
 
 INSERT INTO Salle VALUES (sequenceSalle.NEXTVAL,'s01','Salle 1',3,'130.120.80');
 INSERT INTO Salle VALUES (sequenceSalle.NEXTVAL,'s02','Salle 2',2,'130.120.80');
@@ -32,14 +31,14 @@ INSERT INTO poste VALUES (sequencePoste.NEXTVAL,'p10','Poste 10','130.120.81','0
 INSERT INTO poste VALUES (sequencePoste.NEXTVAL,'p11','Poste 11','130.120.82','01','PCNT','s21');
 INSERT INTO poste VALUES (sequencePoste.NEXTVAL,'p12','Poste 12','130.120.82','02','PCWS','s21');
 
-INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log1','Oracle 6',   '13-05-1995','6.2','UNIX',3000);
-INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log2','Oracle 8',   '15-09-1999','8i','UNIX',5600);
-INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log3','SQL Server', '12-04-1998','7','PCNT',3000);
-INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log4','Front Page', '03-06-1997','5','PCWS',500);
-INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log5','WinDev',     '12-05-1997','5','PCWS',750);
+INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log1','Oracle 6',   to_date('13/05/1995','dd/mm/yyyy'),'6.2','UNIX',3000);
+INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log2','Oracle 8',   to_date('15/09/1999','dd/mm/yyyy'),'8i','UNIX',5600);
+INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log3','SQL Server', to_date('12/04/1998','dd/mm/yyyy'),'7','PCNT',3000);
+INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log4','Front Page', to_date('03/06/1997','dd/mm/yyyy'),'5','PCWS',500);
+INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log5','WinDev',     to_date('12/05/1997','dd/mm/yyyy'),'5','PCWS',750);
 INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log6','SQL*Net', NULL, '2.0','UNIX',500);
-INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log7','I. I. S.',   '12-04-2002','2','PCNT',900);
-INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log8','DreamWeaver','21-09-2003','2.0','BeOS',1400);
+INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log7','I. I. S.',   to_date('12/04/2002','dd/mm/yyyy'),'2','PCNT',900);
+INSERT INTO logiciel VALUES (sequenceLog.NEXTVAL,'log8','DreamWeaver',to_date('21/09/2003','dd/mm/yyyy'),'2.0','BeOS',1400);
 
 
 INSERT INTO Types VALUES (sequenceTyp.NEXTVAL,'TX',  'Terminal X-Window');
