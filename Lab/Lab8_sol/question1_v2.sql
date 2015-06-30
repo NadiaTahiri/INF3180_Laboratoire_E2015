@@ -1,3 +1,5 @@
+SET serveroutput ON;
+
 CREATE OR REPLACE PROCEDURE ajouterVol 
   (numvole vol.numvol%type,
    heureDepart vol.heure_depart%type,
