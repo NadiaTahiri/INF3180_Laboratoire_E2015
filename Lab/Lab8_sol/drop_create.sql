@@ -61,7 +61,7 @@ CREATE TABLE reservation(
 CREATE TABLE escale(
 	numescale INTEGER,
 	ville_escale VARCHAR2(20),
-	date_escale VARCHAR2(10),
+	duree_escale VARCHAR2(10),
 	CONSTRAINT pk_escale PRIMARY KEY (numescale)
 )
 /
